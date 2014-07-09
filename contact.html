@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<title>Taylor Gang</title>
+<link href="./img/favicon.ico" rel="shortcut icon">
+<link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="./css/main.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    
+    <style>
+      #map_canvas {
+        width: 500px;
+        height: 400px;
+        background-color: #CCC;
+      }
+    </style>
+   <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize(){
+  var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(-25.754549,28.231448),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+    
+<body>
+  
+    <ul class="nav nav-tabs">
+        <li><img src="img/small-image.png"  width="150" ></li>
+       <li class="active"><a   href="./index.html">Home</a></li>
+    
+        <ul class="pull-right">
+        <ul class="nav nav-tabs">
+            <li><a href="./members.html">Members</a></li>
+            <li><a href="./contact.html">Contact</a></li>         </ul>
+        </ul>
+    </ul>
+    
+    <div class="jumbotron">
+        <h1>Contact</h1>
+        <h5 >it's Taylor Gang over everything</h5>
+     
+    </div>
+    
+    <div class="row">
+    <div class="col-xs-5">
+     <div id="map_canvas"></div>   
+    </div>
+        
+    <div class="col-xs-7">
+    <div class=h>
+        <h3>Please contact the CSC and ask to make an appointment with one of the members.</h3>
+        <p>Switchboard Tel: +27 (0)12 420 4111<br>
+General Enquiries Tel: +27 (0)12 420 3111<br>
+General Enquiries  Fax: +27 (0)12 420 4555<br>
+Postal Address: University of Pretoria, Private Bag X20, Hatfield, 0028, South Africa</p>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+
+    
+</body>
+    
+<footer>
+    <h5>Website created by TG.</h5>
+    <p>This page has no affiliation with Taylor Gang Recordings or the Original Taylor Gang group created by Wiz Khalifa<span class="glyphicon glyphicon-registration-mark"></span></p>
+    </footer>
+</html>
